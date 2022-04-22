@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Navbar from '../../components/Navbar';
 import { getProduct } from '../../services/productsCall';
 import './ProductDetail.css';
 
@@ -15,24 +16,27 @@ function ProductDetail() {
   }, []);
 
   return (
-    <div className="productdetail">
-      <div>{product.title}</div>
-      <img className="imagecard" src={product.image} alt="" />
-      <div>
+    <div className="product_detail">
+      <div className="card_detail">
+        <Navbar />
+        <div>{product.title}</div>
+        <img className="imagecard" src={product.image} alt="" />
         <div>
-          Precio (USD):
-          {product.price}
+          <div>
+            Precio (USD):
+            {product.price}
+          </div>
+          <ul className="list">
+            <li>
+              Categoría:
+              {product.category}
+            </li>
+            <li>
+              Descripción:
+              {product.description}
+            </li>
+          </ul>
         </div>
-        <ul className="list">
-          <li>
-            Categoría:
-            {product.category}
-          </li>
-          <li>
-            Descripción:
-            {product.description}
-          </li>
-        </ul>
       </div>
     </div>
   );

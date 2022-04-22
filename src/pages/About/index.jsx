@@ -15,7 +15,7 @@ function About() {
         <p className="description" name="description">
           Analista de Sistemas, con gran capacidad de aprendizaje y con
           experiencia en el desarrollo de aplicaciones web en las tecnologias de
-          React || NodeJs || javascritp.
+          React || NodeJs || Javascript.
         </p>
         <h3 className="subtitle">Programas aprendidos en Make it real</h3>
         <ul>
