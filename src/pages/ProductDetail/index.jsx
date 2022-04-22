@@ -19,10 +19,10 @@ function ProductDetail() {
     <div className="product_detail">
       <div className="card_detail">
         <Navbar />
-        <div>{product.title}</div>
+        <div className="title_detail">{product.title}</div>
         <img className="imagecard" src={product.image} alt="" />
         <div>
-          <div>
+          <div className="precio_detail">
             Precio (USD):
             {product.price}
           </div>
