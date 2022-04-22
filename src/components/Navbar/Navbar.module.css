@@ -1,0 +1,20 @@
+.Navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: rgb(6, 31, 197);
+  padding: 1rem 9%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.text{
+  margin: 0 1rem;
+  font-size: medium;
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
